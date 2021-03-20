@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhnen_giohang">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/image_trong_giohang"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/ic_box"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/txt_trong_giohang"
+            android:visibility="invisible"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="aaaa"
+            android:textSize="30dp"
+            android:textColor="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="#D5F4F2F2"
+        android:id="@+id/cardview_title_giohang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_back_giohang"
+                android:src="@drawable/ic_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/testgiohang"
+                android:text="Giỏ hàng"
+                android:textSize="30dp"
+                android:textColor="@color/text"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_above="@+id/cardview_bottom_giohang"
+        android:layout_below="@+id/cardview_title_giohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_giohang"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_bottom_giohang"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linerlayout_bottom_giohang"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:text="Tổng tiền:"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:gravity="end|center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/txt_tongtien_giohang"
+                android:text="10000000"
+                android:textSize="20dp"
+                android:textColor="#F16161"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_thanhtoan_giohang"
+                android:text="Thanh toán"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

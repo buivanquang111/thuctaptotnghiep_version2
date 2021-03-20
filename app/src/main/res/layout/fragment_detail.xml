@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#f4ab52"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_product_detail"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"/>
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/image_backDetail"
+            android:src="@drawable/ic_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bovien"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_below="@+id/tym_dongho"
+                    android:id="@+id/ten_dongho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+<!--                    <TextView-->
+<!--                        android:text="Đồng hồ"-->
+<!--                        android:textSize="30dp"-->
+<!--                        android:textColor="@color/text"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingLeft="20dp"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="50dp"/>-->
+                    <TextView
+                        android:id="@+id/txt_detailtitle"
+                        android:text="aaa"
+                        android:textSize="30dp"
+                        android:textColor="@color/text"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gia_dongho"
+                    android:layout_below="@+id/ten_dongho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_marginLeft="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/txt_giaDetail"
+                        android:textColor="#ED0F0F"
+                        android:gravity="center"
+                        android:text="1000"
+                        android:textSize="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:layout_marginRight="50dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btn_muahang_detail"
+                        android:src="@drawable/icon_add_giohang"
+                        android:backgroundTint="@color/color_selected_bottom_nv"
+                        android:text="Mua hàng"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_below="@+id/gia_dongho"
+                    android:id="@+id/txt_detalproduct"
+                    android:text="aaaaaaaaaaaa"
+                    android:textSize="25dp"
+                    android:paddingLeft="30dp"
+                    android:textColor="@color/text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:id="@+id/tym_dongho"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/tym_trang"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tym_trang"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:id="@+id/tym_do"
+                        android:visibility="invisible"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tym_do"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

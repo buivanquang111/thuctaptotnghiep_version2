@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ThucTapTotNghiep</string>
+    <string name="action_home">Trang chủ</string>
+    <string name="action_person">Cá nhân</string>
+    <string name="action_tintuc">Tin tức</string>
+
+</resources>

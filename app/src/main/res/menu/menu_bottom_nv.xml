@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/ic_home"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+
+    <item
+        android:id="@+id/action_tintuc"
+        android:title="@string/action_tintuc"
+        android:icon="@drawable/ic_tintuc"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+
+    <item
+        android:id="@+id/action_person"
+        android:title="@string/action_person"
+        android:icon="@drawable/ic_person"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+
+
+</menu>

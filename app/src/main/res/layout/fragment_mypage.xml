@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linerlayout_mypager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#f4ab52">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_above="@+id/txt_tenthanhvien_mypager"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_marginLeft="30dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/anh_dai_dien"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <TextView
+            android:id="@+id/txt_tenthanhvien_mypager"
+            android:text="abcd"
+            android:textSize="30dp"
+            android:textColor="#ffff"
+            android:paddingLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btndangnhap_mypage"
+            android:text="Đăng nhập"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linerlayout_thongtincanhan"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_setting_mypager"
+                android:src="@drawable/ic_thongtincanhan"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_yeuthich"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_yeuthich_mypage"
+                android:src="@drawable/tym_trang"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/image_yeuthich_mypage"
+                android:text="Yêu thích"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/txt_like_mypage"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="0 like"
+                android:textColor="@color/text"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout_dangxuat"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_dangxuat_mypage"
+                android:src="@drawable/ic_logout"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:text="Đăng xuất"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
